@@ -1,0 +1,95 @@
+/*
+div {
+    outline: 2px dotted yellow;
+}
+
+
+for at ændre objekternes position, skal man sætte en position: absolute.
+
+z-index bestemmer hvilken rækkefølge de bliver vist i, hvoraf 0 er bagerst og +100 er øverst (ligesom lag i photoshop, indesign, osv.)
+
+hvis man tilføjer overflow: hidden; på ens baggrund, så går de andre objekter ikke ud over billedet (prøv evt. at fjerne det, for at se hvad der sker)
+
+man bestemmer positioner ved at skrive top, left, right, bottom - som oftest er top og left nok.
+*/
+
+.rum {
+    background-image: url("grafik/room.jpg");
+    background-size: cover;
+    width: 80vw;
+    height: 45vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bord {
+    background-image: url("grafik/bord.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 28vw;
+    height: 23vw;
+    position: absolute;
+    top: 27vh;
+    left: 35vh;
+    z-index: 1;
+
+
+
+}
+
+.stol {
+    background-image: url("grafik/chair.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 16vw;
+    height: 24.6vw;
+    position: absolute;
+    top: 22vh;
+    left: 48vh;
+    z-index: 0;
+
+}
+
+.skaal {
+    background-image: url("grafik/skaal.png");
+    background-size: 100%;
+    width: 8vw;
+    height: 3.1vw;
+    position: absolute;
+    top: 25vh;
+    left: 45vh;
+    z-index: 1;
+
+
+
+}
+
+.kvinde {
+    background-image: url("grafik/kvinde.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 16vw;
+    height: 37.8vw;
+    position: absolute;
+    top: 8vh;
+    left: 25vh;
+    z-index: 3;
+
+}
+
+.mand {
+    background-image: url("grafik/mand.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 18vw;
+    height: 44vw;
+    position: absolute;
+    top: 1vh;
+    left: 30vh;
+    z-index: 0;
+
+
+
+
+}
